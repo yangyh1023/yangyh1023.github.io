@@ -3,6 +3,7 @@
   background-color: currentColor;
   padding: 0 4px;
   border-radius: 2px;
+  cursor: help;
 }
 
 .spoiler:hover {
