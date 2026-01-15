@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css");
+
 /* ===== 萌百风格黑幕 (Fluid 优化版) ===== */
 .spoiler {
   /* 基础形状 */
@@ -37,4 +39,28 @@ html[data-user-color-scheme="dark"] .spoiler {
 html[data-user-color-scheme="dark"] .spoiler:hover {
   background-color: #888;
   color: #000 !important; /* 暗色模式悬停，背景灰，文字变黑 */
+}
+
+/* ===== 全站字体强效覆盖 ===== */
+/* Fluid 主题的正文主要包含在 .markdown-body 中，
+   我们需要强制覆盖它以及所有的标题和输入框。
+*/
+body, 
+input, 
+textarea, 
+.markdown-body, 
+.markdown-body h1, 
+.markdown-body h2, 
+.markdown-body h3, 
+.markdown-body h4, 
+.markdown-body h5, 
+.markdown-body h6,
+.post-content,
+.post-excerpt {
+  font-family: "LXGW WenKai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+}
+
+/* 如果你希望代码块保持等宽字体（推荐），可以排除 code 标签 */
+code, pre {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
 }
