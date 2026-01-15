@@ -1,34 +1,40 @@
-/* ===== 优雅黑幕（Fluid 定制版） ===== */
-
+/* ===== 萌百风格黑幕 (Fluid 优化版) ===== */
 .spoiler {
-  position: relative;
-  padding: 0 4px;
-  border-radius: 3px;
+  /* 基础形状 */
+  padding: 0 0.15em;
+  margin: 0 0.1em;
+  border-radius: 2px;
   cursor: help;
-
-  /* 关键：遮罩不消失，只变淡 */
-  background-color: rgba(40, 40, 40, 0.85);
-  color: rgba(40, 40, 40, 0.85);
-
-  /* 渐变核心 */
-  transition:
-    color 0.35s ease,
-    background-color 0.35s ease;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  
+  /* 初始状态：遮盖严实 */
+  /* 这里建议不直接用 currentColor，因为有些字号下会有像素缝隙，用硬编码更稳 */
+  background-color: #252525;
+  color: #252525;
+  text-shadow: none;
 }
 
-/* hover 后：文字渐变为白色，遮罩仍存在 */
+/* 悬停状态：背景保留，文字变亮（即你说的反色效果） */
 .spoiler:hover {
-  color: #ffffff;
-  background-color: rgba(40, 40, 40, 0.35);
+  color: #fff !important;
+  background-color: #252525; /* 保持背景色，文字才会有被“照亮”的感觉 */
 }
 
-/* ===== 暗色模式适配（Fluid） ===== */
+/* 如果黑幕里有链接，也要强制变色 */
+.spoiler a, 
+.spoiler a:hover {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+/* ===== 暗色模式适配 ===== */
+/* Fluid 主题切换到暗色模式时，html 标签会有 data-user-color-scheme="dark" */
 html[data-user-color-scheme="dark"] .spoiler {
-  background-color: rgba(200, 200, 200, 0.18);
-  color: rgba(200, 200, 200, 0.18);
+  background-color: #888; /* 暗色模式下遮罩改用中灰色，避免刺眼 */
+  color: #888;
 }
 
 html[data-user-color-scheme="dark"] .spoiler:hover {
-  color: #ffffff;
-  background-color: rgba(200, 200, 200, 0.08);
+  background-color: #888;
+  color: #000 !important; /* 暗色模式悬停，背景灰，文字变黑 */
 }
