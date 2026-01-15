@@ -1,5 +1,11 @@
 .spoiler {
-  background: red;
-  color: yellow;
-  font-size: 40px;
+  color: currentColor;
+  background-color: currentColor;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.spoiler:hover {
+  color: inherit;
+  background-color: transparent;
 }
