@@ -64,3 +64,81 @@ textarea,
 code, pre {
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
 }
+
+
+
+/* ===============================
+ * 亮色模式（Light）
+ * =============================== */
+
+/* 结论 / 正向 */
+.hl-ok {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+/* 重点 / 关键 */
+.hl-key {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffecb5;
+}
+
+/* 定义 / 说明 */
+.hl-def {
+  background-color: #e7f3ff;
+  color: #084298;
+  border: 1px solid #b6d4fe;
+}
+
+/* 警告 / 注意 */
+.hl-warn {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+/* 通用样式（所有高亮共用） */
+.hl-ok,
+.hl-key,
+.hl-def,
+.hl-warn {
+  padding: 0.15em 0.45em;
+  border-radius: 0.3em;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+/* ===============================
+ * Fluid 暗黑模式（Dark）
+ * =============================== */
+
+html[data-user-color-scheme="dark"] .hl-ok {
+  background-color: #203c33;
+  color: #bfe7d3;
+  border-color: #2f6b57;
+}
+
+html[data-user-color-scheme="dark"] .hl-key {
+  background-color: #3b3320;
+  color: #ffe69c;
+  border-color: #665c3a;
+}
+
+html[data-user-color-scheme="dark"] .hl-def {
+  background-color: #1e2f44;
+  color: #cfe2ff;
+  border-color: #355c9a;
+}
+
+html[data-user-color-scheme="dark"] .hl-warn {
+  background-color: #3a1e23;
+  color: #f1b0b7;
+  border-color: #6d2e38;
+}
+
+.post-content table {
+  display: table;
+  margin: 1em auto;
+}
