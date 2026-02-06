@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>嗯，一些22岁的拙见</title>
+    <link href="/2026/02/06/%E5%97%AF%EF%BC%8C%E4%B8%80%E4%BA%9B22%E5%B2%81%E7%9A%84%E6%8B%99%E8%A7%81/"/>
+    <url>/2026/02/06/%E5%97%AF%EF%BC%8C%E4%B8%80%E4%BA%9B22%E5%B2%81%E7%9A%84%E6%8B%99%E8%A7%81/</url>
+    
+    <content type="html"><![CDATA[<p>昨天晚上在酷安的首页头条里面，看到了承重墙发在「初恋这件小事」这个话题的帖子：</p><p><a href="https://www.coolapk1s.com/feed/70116937" logourl="https://image.coolapk1s.com/proxy?url=http%3A%2F%2Favatar.coolapk.com%2Fdata%2F000%2F63%2F03%2F80_avatar_middle.jpg%3Ft%3D1611885429" class="LinkCard">晨钟酱的动态</a></p><blockquote><p>2月提前回老家，果然父母和身边亲戚都开始催了，几句话不离找对象。</p></blockquote><p>俺也一样  [抱拳]</p><p>没有想到承重墙30岁了，跟我表哥一样大，同样也在被催；我以为他是娃都上幼儿园的那种形象。。。现在反倒也鲜活起来了。。。</p><p><a href="https://www.accenture.com/content/dam/accenture/final/accenture-com/document-4/The-Good-Life-Reimagined-Chinese-Consumer-Insights-CN.pdf">美好生活新主张——埃森哲中国消费者洞察报告</a>中指出：</p><blockquote><p>95后和00后对健康和财富的重视程度明显上升，对爱情的重视程度下降</p></blockquote><figure style="text-align:center;">  <img src="/2026/02/06/%E5%97%AF%EF%BC%8C%E4%B8%80%E4%BA%9B22%E5%B2%81%E7%9A%84%E6%8B%99%E8%A7%81/TheGoodLife.svg" style="width:60%;">  <figcaption>第12页</figcaption></figure><p>当代的年轻人不愿意结婚的原因本质上就是趋利避害，追求幸福，不将就。古代男耕女织，结婚生子，增加劳动力，降低生活成本，提高生存几率，实现 1 + 1 &gt; 2 。而如今，婚姻的成本不比单身的生存成本低。经济上，得背负一定的房贷，导致生活水平出现下降，工作更不能出现差错（被裁员的负面效应增大，更换工作及所在地的不自由）。还需要提供另一半需要的情感支持（自己也在向另一半索取）。一些人际关系的处理也会消耗大量精力。Moreover，</p><blockquote><p>现代社会其实是一个巨大的高效的外部服务系统，他把以前家庭内部承担的功能，大部分都市场化了</p></blockquote><p>膳食有预制菜、餐厅、外卖保障；育儿教育有托育机构、课外班、教育APP等专业化服务；养老护理有老院、社区护理、长期护理险托底；情感社交有社交软件、心理咨询、桌游店等。<br>以前家庭成员之间因为“互相需要”而紧密联结。现在，大部分的需求都可以通过金钱向外部系统购买，家庭成员之间的工具性联结消失了，只剩下纯粹的（有时也是脆弱的）情感联结。</p><script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script><div id="marriage_trend_chart" style="width: 100%; height: 550px; margin: 30px 0;"></div><script type="text/javascript">(function() {  var chartDom = document.getElementById('marriage_trend_chart');  var myChart = echarts.init(chartDom);  // 每5年一个点（你已整理好）  const years = [    '1970','1975','1980','1985','1990','1995',    '2000','2005','2010','2015','2020','2025'  ];  // 国家统一配色  const colors = {    japan: '#1890ff', // 蓝    korea: '#f5222d', // 红    china: '#52c41a'  // 绿  };  var option = {    title: {      text: '中日韩近 50 年初婚年龄变化趋势',      subtext: '数据来源：各国家统计部门官方普查及抽样调查',      left: 'center',      textStyle: {        fontFamily: 'LXGW WenKai, sans-serif',        fontSize: 20      }    },    tooltip: {      trigger: 'axis',      confine: true,      formatter: function (params) {        let res = params[0].axisValue + " 年<br/>";        params.forEach(p => {          res += `${p.marker} ${p.seriesName}: ${p.data} 岁<br/>`;        });        return res;      }    },    legend: {      top: '12%',      data: [        '日本-男','日本-女',        '韩国-男','韩国-女',        '中国-男','中国-女'      ],      textStyle: { fontFamily: 'LXGW WenKai' }    },    grid: {      top: '25%',      left: '3%',      right: '4%',      bottom: '5%',      containLabel: true    },    xAxis: {      type: 'category',      boundaryGap: false,      data: years,      axisLabel: { fontFamily: 'LXGW WenKai' }    },    yAxis: {      type: 'value',      min: 20,      max: 35,      name: '初婚年龄 (岁)',      nameTextStyle: {        fontFamily: 'LXGW WenKai',        padding: [0,0,0,40]      },      axisLabel: { fontFamily: 'LXGW WenKai' }    },    series: [      // ========== 日本 ==========      {        name: '日本-男',        type: 'line',        smooth: true,        itemStyle: { color: colors.japan },        lineStyle: { type: 'solid', width: 2 },        data: [26.9,27.0,27.8,28.2,28.4,28.5,28.8,29.8,30.5,31.1,31.0,31.2]      },      {        name: '日本-女',        type: 'line',        smooth: true,        itemStyle: { color: colors.japan },        lineStyle: { type: 'dashed', width: 2 },        data: [24.2,24.7,25.2,25.5,25.9,26.3,27.0,28.0,28.8,29.4,29.4,29.8]      },      // ========== 韩国 ==========      {        name: '韩国-男',        type: 'line',        smooth: true,        itemStyle: { color: colors.korea },        lineStyle: { type: 'solid', width: 2 },        data: [27.1,27.4,27.3,27.8,27.8,28.4,29.3,30.9,31.8,32.6,33.2,33.9]      },      {        name: '韩国-女',        type: 'line',        smooth: true,        itemStyle: { color: colors.korea },        lineStyle: { type: 'dashed', width: 2 },        data: [23.3,23.7,23.2,24.1,24.8,25.4,26.5,27.7,28.9,30.0,30.8,31.6]      },      // ========== 中国 ==========      {        name: '中国-男',        type: 'line',        smooth: true,        itemStyle: { color: colors.china },        lineStyle: { type: 'solid', width: 2 },        data: [23.2,23.8,25.5,24.8,23.6,24.5,25.3,25.5,25.9,27.2,29.4,30.1]      },      {        name: '中国-女',        type: 'line',        smooth: true,        itemStyle: { color: colors.china },        lineStyle: { type: 'dashed', width: 2 },        data: [20.2,21.6,23.1,22.8,22.2,23.0,23.3,23.5,24.0,25.6,28.0,28.7]      }    ]  };  myChart.setOption(option);  window.addEventListener('resize', function() {    myChart.resize();  });})();</script><p>虽然结婚可能弊大于利，但随着年龄的增长，多数人还是选择结婚，为了对抗虚无，就像漂在大洋里的小船，在动物脑子里面的灯塔指引下靠了岸。</p><hr><p>上述还只是讨论结婚，如果生孩子有该做哪些准备、面临哪些挑战呢？改天再写吧，今天困了</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>结婚，催婚</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>有趣又无趣的thinking</title>
     <link href="/2026/01/31/%E6%9C%89%E8%B6%A3%E5%8F%88%E6%97%A0%E8%B6%A3%E7%9A%84thinking/"/>
     <url>/2026/01/31/%E6%9C%89%E8%B6%A3%E5%8F%88%E6%97%A0%E8%B6%A3%E7%9A%84thinking/</url>

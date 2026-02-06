@@ -137,8 +137,10 @@ html[data-user-color-scheme="dark"] .hl-warn {
   color: #f1b0b7;
   border-color: #6d2e38;
 }
-
 .post-content table {
   display: table;
-  margin: 1em auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
